@@ -166,9 +166,8 @@ def client_handler(client_socket):
                 file_buffer += data
 
         try:
-            file_descriptor = open(upload_destination,"wb")
-            file_descriptor.write(file_buffer)
-            file_descriptor.close()
+            with open(upload_destination, "wb") as f:
+                f.write(file_buffer)
 
             client_socket.send(
                 "Successfully saved file to %s\r\n" % upload_destination)
