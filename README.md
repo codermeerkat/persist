@@ -1,3 +1,7 @@
+#### Description: ####
+Python script that sets up a server and listens for connections.
+Executes commands sent via telnet.
+
 #### Usage: ####
 
 Spin up a local copy of ubuntu using virtualbox and vagrant. Forwards
@@ -25,6 +29,8 @@ Any commands you run on the host vm are now executed against the VM.
   of telnet.
 * Add support and version checking for Python3.
 * Add testing and build out into a PIP.
+* Add TLS support
+* Add authentication
 
 #### Notes: ####
 
